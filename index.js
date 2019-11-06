@@ -12,7 +12,11 @@ program.version(require('./package').version)
         .option('-f, --filename <filename>', '路由文件, 默认src/router/router.js')
         .action(({filename = '/src/router/router.js'}) => {
             let data = getPath(filename)
-            !data.error && console.log('finish!')
+            if(!data.error) {
+                console.log('finish!')
+            } else {
+                console.error(data.error)
+            }
         })
         .parse(process.argv)
 
