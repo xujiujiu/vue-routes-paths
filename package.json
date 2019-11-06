@@ -1,6 +1,6 @@
 {
-  "name": "vue-router-path",
-  "version": "1.0.0",
+  "name": "vue-routes-paths",
+  "version": "0.0.3",
   "description": "output router path",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "url": "git+https://github.com/xujiujiu/vue-routes-paths.git"
   },
   "keywords": [
-    "vue-router path"
+    "vue-router",
+    "paths"
   ],
   "author": "xujiujiu",
   "license": "MIT",
@@ -25,7 +26,7 @@
   "devDependencies": {
     "commander": "^3.0.2"
   },
-  "dependencies": {
-    "node-xlsx": "^0.15.0"
+  "directories": {
+    "lib": "lib"
   }
 }
